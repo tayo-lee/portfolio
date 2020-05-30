@@ -7,7 +7,7 @@ module.exports = {
     siteTitle: `Jai Harie`,
     siteTitleAlt: `Jai Harie, Portfolio`,
     siteHeadline: `Jai Harie, Portfolio`,
-    siteUrl: `https://tayo-lee.github.io`,
+    siteUrl: `https://tayo-lee.github.io/portfolio`,
     siteDescription: `A minimal portfolio and blog site for my personal use and serves as showcase to my projects and resume in this digital playground.`,
     siteLanguage: `en`,
     siteImage: `/banner.png`,
