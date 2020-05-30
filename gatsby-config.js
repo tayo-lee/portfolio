@@ -4,7 +4,14 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `Jai Harie`,
+    siteTitleAlt: `Jai Harie, Portfolio`,
+    siteHeadline: `Jai Harie, Portfolio`,
+    siteUrl: `https://tayo-lee.github.io`,
+    siteDescription: `A minimal portfolio and blog site for my personal use and serves as showcase to my projects and resume in this digital playground.`,
+    siteLanguage: `en`,
+    siteImage: `/banner.png`,
+    author: `@tayo-lee`,
   },
   plugins: [
     {
@@ -13,23 +20,23 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
-            slug: `/blog`,
-          },
-          {
             title: `About`,
             slug: `/about`,
           },
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/jai-harie-65614b1ab/`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `GitHub`,
+            url: `https://github.com/tayo-lee`,
           },
+          {
+            name: `Resume`,
+            url: ``
+          }
         ],
       },
     },
@@ -43,22 +50,22 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Jai Harie | Portfolio`,
+        short_name: `jaiharie`,
+        description: `A minimal portfolio and blog site for my personal use and serves as showcase to my projects and resume in this digital playground.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
+            src: `/favicon-196x196.png`,
+            sizes: `196x196`,
             type: `image/png`,
           },
           {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
+            src: `/favicon-196x196.png`,
+            sizes: `196x196`,
             type: `image/png`,
           },
         ],
@@ -66,5 +73,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-theme-ui`,
   ],
 }
